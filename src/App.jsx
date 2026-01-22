@@ -33,6 +33,7 @@ const Portfolio = () => {
         <div className="flex gap-8 text-sm font-medium text-gray-400">
           <a href="#projects" className="hover:text-white transition">Projects</a>
           <a href="#skills" className="hover:text-white transition">Skills</a>
+          <a href="#contact" className="hover:text-white transition">Contact</a>
           <a href="https://www.linkedin.com/in/sumit-singh-376a99120/" className="hover:text-white transition">LinkedIn</a>
         </div>
       </nav>
@@ -50,7 +51,7 @@ const Portfolio = () => {
           high-performance real-time applications.
         </p>
         <div className="mt-12 flex gap-4">
-          <a href="mailto:letscodewithsumit@gmail.com" className="bg-white text-black px-8 py-4 rounded-xl font-bold hover:scale-105 transition active:scale-95">Get in touch</a>
+          <a href="#contact" className="bg-white text-black px-8 py-4 rounded-xl font-bold hover:scale-105 transition active:scale-95">Get in touch</a>
           <a href="/resume.pdf" download className="bg-gray-800 text-white px-8 py-4 rounded-xl font-bold border border-gray-700 hover:bg-gray-700 transition">Resume.pdf</a>
         </div>
       </header>
@@ -101,6 +102,20 @@ const Portfolio = () => {
               <h4 className="text-sm font-bold text-green-500 uppercase tracking-widest mb-4">Database</h4>
               <ul className="text-gray-400 space-y-2"><li>MongoDB Atlas</li><li>Mongoose</li><li>Redis</li></ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="py-32 px-6 border-t border-white/5">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8 tracking-tight">Get In Touch</h2>
+          <p className="text-gray-400 mb-12">Have a project in mind? Let's talk!</p>
+          <div className="space-y-6">
+            <input type="text" placeholder="Your Name" className="w-full p-4 bg-[#121212] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500" />
+            <input type="email" placeholder="Your Email" className="w-full p-4 bg-[#121212] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500" />
+            <textarea placeholder="Your Message" rows="5" className="w-full p-4 bg-[#121212] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500"></textarea>
+            <button onClick={() => alert('Email me at: letscodewithsumit@gmail.com')} className="bg-white text-black px-8 py-4 rounded-xl font-bold hover:bg-gray-200 transition">Send Message</button>
           </div>
         </div>
       </section>
